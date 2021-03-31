@@ -1,27 +1,28 @@
 main() {
-  // Robot robo = new Robot(8, 4, 2);
+  /* ____A LIRE_____ 
+     pour instancier les robots j'ai utiliser un constructeur qui prend en compte
+     (posx,posy,face(0 pour nord,1 pour Est,2 pour sud et 3 pour ouest))
+     pour afficher la direction dans laquelle le fait face utiliser l'attribut direction
+     (il fera ressortir la face en chaine de caractere).
+     utiliser la methode instruction("...") pour donner les ordres au robot une fois creer.
+  */
 
-  // print(robo.direction);
-  // robo.instruction("GAAADDDAGGGG");
-  // print("position x : ${robo.x}");
-  // print("position y : ${robo.y}");
-  // print("orientation : ${robo.direction}");
-
-  print("---------------------------------------------");
+  print("--------DEBUT PROGRAMME-----------");
   //Robot(x,y,<la face(0,1,2,3 pour Nord,Est,Sud,Ouest)>)
   Robot robo1 = new Robot(0, 0, 0);
   Robot robo2 = new Robot(0, -1, 0);
 
   //CHANGEMENT DE LA POSITION VERS LA FACE EST
-  // print(robo2.direction);
+
   robo1.instruction("D");
   robo2.instruction("D");
-  // print(robo2.direction);
+  // print(robo2.direction) affichera Est
+
   //CHANGEMENT DE LA POSITION VERS LA FACE OUEST
   robo1.instruction("GG");
   robo2.instruction("GG");
-  // tourner 2 fois a gauche permet de changer la face a Nord, puis Ouest
-  // print(robo2.direction);
+  // tourner 2 fois a gauche permet de changer la face a Nord, puis Ouest(car les 2 robot font face actuellement a l'Est)
+  // print(robo2.direction) affichera Ouest;
 
   //SERIE D'INSTRUCTION
   //1
