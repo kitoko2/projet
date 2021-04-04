@@ -2,7 +2,7 @@ main() {
   /* ____A LIRE_____ 
      pour instancier les robots j'ai utiliser un constructeur qui prend en compte
      (posx,posy,face(0 pour nord,1 pour Est,2 pour sud et 3 pour ouest))
-     pour afficher la direction dans laquelle le fait face utiliser l'attribut direction
+     pour afficher la direction dans laquelle le robot fait face utiliser l'attribut direction
      (il fera ressortir la face en chaine de caractere).
      utiliser la methode instruction("...") pour donner les ordres au robot une fois creer.
   */
@@ -51,7 +51,7 @@ class Robot {
   int x = 0;
   int y = 0;
   int face = 0; //0 pour nord,1 pour ouest 2 pour sud 3 pour Est
-  String? direction;
+  String direction;
   List changeface = ["Nord", "Est", "Sud", "Ouest"];
 
   Robot(int x, int y, int face) {
